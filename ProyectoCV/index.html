@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Currículum</title>
+    <!-- Enlace a Bootstrap via CDN (asegúrate de tener conexión a Internet) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Tu archivo de estilo CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+       <div class="container">
+        <h1 class="text-center">Mi Currículum</h1>
+        <hr>
+        
+
+        <!-- Este es el primer comentario. Datos Personales -->
+        <section>
+            <h3>Datos Personales</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>Nombre:</strong> Jorge Ponce</p>
+                    <p><strong>Correo Electrónico:</strong> ejemplo@ejemplo.com</p>
+                    <p><strong>Teléfono:</strong> (11) 1111-1111</p>
+                </div>
+                <div class="col-md-6">
+                    <!-- Puedes agregar una foto aquí -->  
+                </div>
+            </div>
+        </section>
+
+        <!-- Este es el segundo comentario. Experiencia Laboral -->
+        <section>
+            <h3>Experiencia Laboral</h3>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Desarrollador Web</h5>
+                    <p class="card-text">Empresa XXX, BA</p>
+                    <p class="card-text">Enero 2020 - Presente</p>
+                    <p class="card-text">Descripción de las responsabilidades y logros en este puesto.
+                         Atencion de donantes de sangre, medicina transfusional, aferesis. 
+                         Manejo de sistemas de banco de sangre. 25 años de experiencia y voy por mas. 
+                         </p>
+                         
+                </div>
+            </div>
+
+            <!-- Este es el tercer comentario. Experiencias laborales aquí si es necesario -->
+        </section>
+
+        <!-- Educación -->
+        <section>
+            <h3>Educación</h3>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Tecnico en hemoterapia</h5>
+                    <p class="card-text">Cruz Roja Argentina, UBA, Moreno BA </p>
+                    <p class="card-text">Graduado en Febrero 1998</p>
+                </div>
+            </div>
+            
+        </section>
+    </div>
+</body>
+<footer>
+       <div>        
+                <p id="barra-colores-2"></p>  
+                <button id="Contactar" onclick="MostrarTelefono()">Contactar</button>
+                <p id="telefono"></p>
+
+                <script>
+                 function MostrarTelefono(){
+                  document.getElementById("telefono").innerHTML = "011-4455-4455 // ejemplo@ejemplo.com";
+                  }
+                </script>
+        </div>
+
+</footer>
+</html>
